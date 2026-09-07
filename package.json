@@ -33,7 +33,7 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
     "oxfmt": "0.61.0",
-    "oxlint": "1.76.0",
+    "oxlint": "1.81.0",
     "oxlint-tsgolint": "7.0.2001",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3",
