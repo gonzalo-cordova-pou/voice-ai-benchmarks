@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    # Daily at 08:23 UTC, away from the top-of-hour Actions rush.
+    - cron: '23 8 * * *'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +20,9 @@ concurrency:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -32,8 +37,27 @@ jobs:
         run: npm ci
       - name: Lint
         run: npm run lint
+      - name: Test ranking
+        run: npm test
+      - name: Restore previous benchmark stats
+        id: stats-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: data/benchmark-stats.json
+          key: benchmark-stats-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            benchmark-stats-v1-
+      - name: Refresh benchmark stats
+        run: npm run stats:refresh
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Build
         run: npm run build
+      - name: Save benchmark stats for the next refresh
+        uses: actions/cache/save@v5
+        with:
+          path: data/benchmark-stats.json
+          key: ${{ steps.stats-cache.outputs.cache-primary-key }}
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

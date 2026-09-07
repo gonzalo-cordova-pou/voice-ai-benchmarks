@@ -1,0 +1,262 @@
+{
+  "benchmarks": {
+    "aa-wer-streaming": {},
+    "aiewf-eval": {
+      "stars": {
+        "count": 161,
+        "source": "kwindla/aiewf-eval",
+        "url": "https://github.com/kwindla/aiewf-eval",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "big-bench-audio": {},
+    "car-bench": {
+      "stars": {
+        "count": 41,
+        "source": "car-bench/car-bench",
+        "url": "https://github.com/car-bench/car-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "codett": {
+      "stars": {
+        "count": 16,
+        "source": "yingaowang-casia/codett.github.io",
+        "url": "https://github.com/yingaowang-casia/codett.github.io",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "coval-voice-ai-benchmarks": {
+      "stars": {
+        "count": 25,
+        "source": "coval-ai/benchmarks",
+        "url": "https://github.com/coval-ai/benchmarks",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "datapoint-tts": {},
+    "design-arena-tts": {},
+    "emergenttts-eval": {
+      "stars": {
+        "count": 231,
+        "source": "boson-ai/emergenttts-eval-public",
+        "url": "https://github.com/boson-ai/emergenttts-eval-public",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "eot-bench": {
+      "stars": {
+        "count": 54,
+        "source": "livekit/eot-bench",
+        "url": "https://github.com/livekit/eot-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "eva": {
+      "stars": {
+        "count": 208,
+        "source": "servicenow/eva",
+        "url": "https://github.com/servicenow/eva",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 5,
+        "source": "ARXIV:2605.13841",
+        "url": "https://www.semanticscholar.org/paper/6daee39dec883283c10c3e84692858f70f6b6acc",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "full-duplex-bench": {
+      "stars": {
+        "count": 282,
+        "source": "daniellin94144/full-duplex-bench",
+        "url": "https://github.com/daniellin94144/full-duplex-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 16,
+        "source": "ARXIV:2604.04847",
+        "url": "https://www.semanticscholar.org/paper/7cb5e8e8b52226f3fd0590fca166e1506de04629",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "humanness-index": {
+      "stars": {
+        "count": 33,
+        "source": "vapiai/humanness-index",
+        "url": "https://github.com/vapiai/humanness-index",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "mint-bench": {},
+    "mtalk-bench": {
+      "stars": {
+        "count": 20,
+        "source": "freedomintelligence/mtalk-bench",
+        "url": "https://github.com/freedomintelligence/mtalk-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 13,
+        "source": "ARXIV:2508.18240",
+        "url": "https://www.semanticscholar.org/paper/f517a1e7ce72e4271c189235483fdec031dbd370",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "open-asr-leaderboard": {
+      "stars": {
+        "count": 247,
+        "source": "huggingface/open_asr_leaderboard",
+        "url": "https://github.com/huggingface/open_asr_leaderboard",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "open-tts-eval": {
+      "stars": {
+        "count": 36,
+        "source": "inworld-ai/open-tts-eval",
+        "url": "https://github.com/inworld-ai/open-tts-eval",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "openbenchmarks-latency": {
+      "stars": {
+        "count": 2,
+        "source": "openbenchmarks-labs/voice-agent-latency",
+        "url": "https://github.com/openbenchmarks-labs/voice-agent-latency",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "phonebench": {},
+    "picovoice-vad-benchmark": {
+      "stars": {
+        "count": 23,
+        "source": "picovoice/voice-activity-benchmark",
+        "url": "https://github.com/picovoice/voice-activity-benchmark",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "pipecat-stt-benchmark": {
+      "stars": {
+        "count": 116,
+        "source": "pipecat-ai/stt-benchmark",
+        "url": "https://github.com/pipecat-ai/stt-benchmark",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "sid-bench": {
+      "stars": {
+        "count": 20,
+        "source": "xkx-hub/sid-bench",
+        "url": "https://github.com/xkx-hub/sid-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "speech-robust-bench": {
+      "stars": {
+        "count": 18,
+        "source": "ahmedshah1494/speech_robust_bench",
+        "url": "https://github.com/ahmedshah1494/speech_robust_bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "tau2-bench": {
+      "stars": {
+        "count": 1962,
+        "source": "sierra-research/tau2-bench",
+        "url": "https://github.com/sierra-research/tau2-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 446,
+        "source": "ARXIV:2506.07982",
+        "url": "https://www.semanticscholar.org/paper/91c12fc38719eae97e812c6d59a37de5de288c75",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "tau3-voice": {
+      "stars": {
+        "count": 1962,
+        "source": "sierra-research/tau2-bench",
+        "url": "https://github.com/sierra-research/tau2-bench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 17,
+        "source": "ARXIV:2603.13686",
+        "url": "https://www.semanticscholar.org/paper/534fa64bf36e1d8334bd39efad568ab6d4ec43bc",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "turnbench": {
+      "stars": {
+        "count": 36,
+        "source": "sesameailabs/turnbench",
+        "url": "https://github.com/sesameailabs/turnbench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 0,
+        "source": "ARXIV:2608.25218",
+        "url": "https://www.semanticscholar.org/paper/a080dbad128149b1a2c0def01f6fe3cc5a50d104",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "turnnat": {
+      "stars": {
+        "count": 1,
+        "source": "hzted/turnnat-benchmark",
+        "url": "https://github.com/hzted/turnnat-benchmark",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "vamos-bench": {
+      "stars": {
+        "count": 16,
+        "source": "veris-ai/riley-agent",
+        "url": "https://github.com/veris-ai/riley-agent",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "vcx-hard": {},
+    "vocalbench": {
+      "stars": {
+        "count": 8,
+        "source": "sjtu-omniagent/vocalbench",
+        "url": "https://github.com/sjtu-omniagent/vocalbench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "voiceagentbench": {
+      "stars": {
+        "count": 6,
+        "source": "ola-krutrim/voiceagentbench",
+        "url": "https://github.com/ola-krutrim/voiceagentbench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      },
+      "citations": {
+        "count": 11,
+        "source": "ARXIV:2510.07978",
+        "url": "https://www.semanticscholar.org/paper/cdda6d2342a6d7259c4736c301d943fa4c5e522a",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "voicebench": {
+      "stars": {
+        "count": 390,
+        "source": "matthewcym/voicebench",
+        "url": "https://github.com/matthewcym/voicebench",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    },
+    "voicecodebench": {},
+    "voiceeq-bench": {
+      "citations": {
+        "count": 1,
+        "source": "ARXIV:2607.14846",
+        "url": "https://www.semanticscholar.org/paper/b3c4a1fd6a0dd41ecf3a09c1465fab23f1b91e32",
+        "fetchedAt": "2026-09-07T05:36:53.891Z"
+      }
+    }
+  }
+}

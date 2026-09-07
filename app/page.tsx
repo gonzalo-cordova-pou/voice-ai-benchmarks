@@ -8,6 +8,8 @@ import {
   getBenchmarks,
 } from '@/lib/benchmarks';
 
+import { type BenchmarkSort, readSort } from '@/lib/benchmark-ranking';
+
 const benchmarks = getBenchmarks();
 const repository = 'https://github.com/gonzalo-cordova-pou/voice-ai-benchmarks';
 
@@ -15,6 +17,7 @@ type Route = {
   category: CatalogCategory | null;
   benchmark: string | null;
   screen: ConsoleScreen;
+  sort: BenchmarkSort;
 };
 type NavigationState = { cursor?: number; scrollY?: number };
 
@@ -29,6 +32,7 @@ function readRoute(): Route {
   return {
     category: category ?? (benchmark ? 'all' : null),
     benchmark: benchmark?.id ?? null,
+    sort: readSort(params.get('sort')),
     screen:
       category || benchmark || params.get('screen') === 'components'
         ? 'components'
@@ -56,7 +60,12 @@ export default function Home() {
       : cursor;
     const nextScroll = category ? 0 : consoleScroll.current;
     setCursor(nextCursor);
-    setRoute({ category, benchmark: null, screen: 'components' });
+    setRoute({
+      category,
+      benchmark: null,
+      screen: 'components',
+      sort: route.sort,
+    });
     const url = new URL(window.location.href);
     if (category) url.searchParams.set('category', category);
     else url.searchParams.delete('category');
@@ -85,9 +94,18 @@ export default function Home() {
     });
   }
 
+  function changeSort(sort: BenchmarkSort) {
+    window.history.replaceState({ cursor, scrollY: window.scrollY }, '');
+    const url = new URL(window.location.href);
+    if (sort === 'stars') url.searchParams.delete('sort');
+    else url.searchParams.set('sort', sort);
+    setRoute({ ...route, sort });
+    window.history.pushState({ cursor, scrollY: window.scrollY }, '', url);
+  }
+
   function navigateConsole(screen: ConsoleScreen) {
     window.history.replaceState({ cursor, scrollY: window.scrollY }, '');
-    setRoute({ category: null, benchmark: null, screen });
+    setRoute({ category: null, benchmark: null, screen, sort: route.sort });
     const url = new URL(window.location.href);
     url.searchParams.delete('category');
     url.searchParams.delete('benchmark');
@@ -155,6 +173,8 @@ export default function Home() {
             benchmarks={benchmarks}
             category={route.category}
             highlightedBenchmark={route.benchmark}
+            sort={route.sort}
+            onSortChange={changeSort}
             onCategoryChange={(category) => navigate(category, false)}
             onBack={() => navigate(null)}
           />
