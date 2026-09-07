@@ -31,7 +31,6 @@ export function Catalog({
   const [contributionCursor, setContributionCursor] = useState(0);
   const screenRef = useRef<HTMLDivElement>(null);
   const deviceRef = useRef<HTMLElement>(null);
-  const githubLinkRef = useRef<HTMLAnchorElement>(null);
   const activeCursor =
     screen === 'home'
       ? homeCursor
@@ -73,7 +72,7 @@ export function Catalog({
     }
     if (screen === 'home') {
       if (homeCursor === 0) changeScreen('components');
-      else githubLinkRef.current?.click();
+      else changeScreen('contribute');
     } else if (screen === 'components') {
       onSelectCategory(categoryOptions[cursor].id);
     } else {
@@ -231,34 +230,21 @@ export function Catalog({
                         <span className="row-text">Benchmarks</span>
                         <span aria-hidden="true">›</span>
                       </button>
-                      <a
+                      <button
                         className={cn(
                           'lcd-row',
                           homeCursor === 1 && 'is-selected',
                         )}
-                        ref={githubLinkRef}
                         data-menu-item
-                        href={repository}
-                        target="_blank"
-                        rel="noreferrer"
                         onFocus={() => setHomeCursor(1)}
-                        onClick={(event) => {
-                          if (
-                            !event.metaKey &&
-                            !event.ctrlKey &&
-                            !event.shiftKey &&
-                            !event.altKey
-                          )
-                            changeScreen('contribute');
-                        }}
+                        onClick={() => changeScreen('contribute')}
                       >
                         <span className="row-cursor" aria-hidden="true">
                           ▶
                         </span>
                         <span className="row-text">GitHub repo</span>
-                        <span aria-hidden="true">↗</span>
-                        <span className="sr-only"> (opens in a new tab)</span>
-                      </a>
+                        <span aria-hidden="true">›</span>
+                      </button>
                     </div>
                     <p className="console-home-count">
                       {benchmarks.length} BENCHMARKS /{' '}
@@ -288,14 +274,14 @@ export function Catalog({
                         )}
                         data-menu-item
                         onFocus={() => setContributionCursor(0)}
-                        href={repository + '/issues/new?template=benchmark.yml'}
+                        href={repository}
                         target="_blank"
                         rel="noreferrer"
                       >
                         <span className="row-cursor" aria-hidden="true">
                           ▶
                         </span>
-                        <span className="row-text">Suggest a benchmark</span>
+                        <span className="row-text">Open repository</span>
                         <span aria-hidden="true">↗</span>
                         <span className="sr-only"> (opens in a new tab)</span>
                       </a>
@@ -306,14 +292,14 @@ export function Catalog({
                         )}
                         data-menu-item
                         onFocus={() => setContributionCursor(1)}
-                        href={repository}
+                        href={repository + '/issues/new?template=benchmark.yml'}
                         target="_blank"
                         rel="noreferrer"
                       >
                         <span className="row-cursor" aria-hidden="true">
                           ▶
                         </span>
-                        <span className="row-text">Open repository</span>
+                        <span className="row-text">Suggest a benchmark</span>
                         <span aria-hidden="true">↗</span>
                         <span className="sr-only"> (opens in a new tab)</span>
                       </a>
@@ -482,7 +468,7 @@ export function Catalog({
             ? 'Main menu. Benchmarks or GitHub repo.'
             : screen === 'components'
               ? 'Choose a component to open the full benchmark library.'
-              : 'Contribute to the collection. Suggest a benchmark or open the repository.'
+              : 'Contribute to the collection. Open the repository or suggest a benchmark.'
           : 'Screen off.'}
       </span>
     </section>
