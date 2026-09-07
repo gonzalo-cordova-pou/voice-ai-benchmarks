@@ -547,31 +547,6 @@
   justify-content: flex-end;
   min-width: 0;
 }
-.library-ranking-note {
-  padding: 16px 18px;
-  margin: -8px 0 28px;
-  border: 1px solid var(--library-line);
-  background: #c8d4a659;
-  font:
-    12px/1.7 'Courier New',
-    monospace;
-  color: var(--library-muted);
-}
-.library-ranking-note p {
-  margin: 0;
-}
-.library-ranking-note summary {
-  cursor: pointer;
-  width: fit-content;
-  padding-block: 8px;
-  color: var(--library-ink);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.library-ranking-note summary:focus-visible {
-  outline: 2px dashed var(--library-ink);
-  outline-offset: 3px;
-}
 .library-group {
   margin-bottom: 32px;
 }

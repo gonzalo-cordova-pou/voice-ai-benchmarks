@@ -190,18 +190,6 @@ export function BenchmarkLibrary({
               <span>benchmarks</span>
             </p>
           </header>
-          <div className="library-ranking-note">
-            <details>
-              <summary>About these signals</summary>
-              <p>
-                Stars measure interest in the linked GitHub repository; a
-                repository can cover several benchmarks. Citations come from
-                Semantic Scholar, not Google Scholar. Counts are saved
-                snapshots; each badge shows its retrieval date. Entries without
-                counts remain visible below the ranked results.
-              </p>
-            </details>
-          </div>
           {groups.map((group) => (
             <section
               className="library-group"
