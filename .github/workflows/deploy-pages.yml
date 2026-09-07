@@ -62,7 +62,7 @@ jobs:
           path: data/benchmark-stats.json
           key: ${{ steps.stats-cache.outputs.cache-primary-key }}
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
