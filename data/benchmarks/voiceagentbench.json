@@ -1,0 +1,14 @@
+{
+  "id": "voiceagentbench",
+  "name": "VoiceAgentBench",
+  "organization": "Krutrim AI Labs",
+  "description": "Evaluates spoken agents on single-tool tasks, multi-tool workflows, multi-turn dialogue, and safety.",
+  "categories": ["voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://arxiv.org/abs/2510.07978",
+  "codeUrl": "https://github.com/ola-krutrim/VoiceAgentBench",
+  "paperUrl": "https://arxiv.org/abs/2510.07978",
+  "architectures": ["cascaded", "speech-to-speech"]
+}

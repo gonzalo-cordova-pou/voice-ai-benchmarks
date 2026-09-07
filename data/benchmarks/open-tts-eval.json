@@ -1,0 +1,12 @@
+{
+  "id": "open-tts-eval",
+  "name": "Open TTS Eval",
+  "organization": "Inworld",
+  "description": "A reproducible toolkit for evaluating TTS intelligibility, audio quality, prosody, and speaker similarity.",
+  "categories": ["tts"],
+  "benchmarkType": "toolkit",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/inworld-ai/open-tts-eval",
+  "codeUrl": "https://github.com/inworld-ai/open-tts-eval"
+}

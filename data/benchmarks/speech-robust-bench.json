@@ -1,0 +1,11 @@
+{
+  "id": "speech-robust-bench",
+  "name": "Speech Robust Bench",
+  "organization": "Telefonica Research / Carnegie Mellon University",
+  "description": "Evaluates speech recognition models under noise, distortions, and other input perturbations.",
+  "categories": ["stt"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/ahmedshah1494/speech_robust_bench"
+}

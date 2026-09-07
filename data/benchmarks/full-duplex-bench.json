@@ -1,0 +1,14 @@
+{
+  "id": "full-duplex-bench",
+  "name": "Full-Duplex-Bench",
+  "organization": "National Taiwan University / NVIDIA",
+  "description": "Evaluates turn-taking, overlap handling, real-world disfluency, and tool use across live voice-agent architectures.",
+  "categories": ["turn-taking", "s2s", "voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://arxiv.org/abs/2604.04847",
+  "codeUrl": "https://github.com/DanielLin94144/Full-Duplex-Bench",
+  "paperUrl": "https://arxiv.org/abs/2604.04847",
+  "architectures": ["cascaded", "speech-to-speech"]
+}

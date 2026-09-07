@@ -1,0 +1,11 @@
+{
+  "id": "vocalbench",
+  "name": "VocalBench",
+  "organization": "Shanghai Jiao Tong University / Ant Group",
+  "description": "Evaluates speech interaction models on response quality, conversational ability, and robustness.",
+  "categories": ["s2s"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://github.com/SJTU-OmniAgent/VocalBench"
+}

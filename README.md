@@ -43,6 +43,9 @@ Create a JSON file in `data/benchmarks/` using this template:
   "organization": "Example Organization",
   "description": "One sentence describing what the benchmark compares.",
   "categories": ["voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
   "websiteUrl": "https://example.com/benchmark",
   "codeUrl": "https://github.com/example/benchmark",
   "paperUrl": "https://arxiv.org/abs/0000.00000",
@@ -50,7 +53,7 @@ Create a JSON file in `data/benchmarks/` using this template:
 }
 ```
 
-Only `codeUrl`, `paperUrl`, and `architectures` are optional. Valid categories are `stt`, `tts`, `turn-taking`, `llm`, `s2s`, and `voice-agents`. Valid architectures are `cascaded`, `speech-to-speech`, and `hybrid`.
+Only `codeUrl`, `paperUrl`, and `architectures` are optional. Valid categories are `stt`, `tts`, `turn-taking`, `llm`, `s2s`, and `voice-agents`. Valid benchmark types are `benchmark`, `leaderboard`, `arena`, `framework`, and `toolkit`. Valid evaluation methods are `automatic`, `deterministic`, `human`, `llm-judge`, `mixed`, and `unknown`. Valid openness values are `open`, `partially-open`, `closed`, and `unknown`. Valid architectures are `cascaded`, `speech-to-speech`, and `hybrid`.
 
 Then verify the change:
 

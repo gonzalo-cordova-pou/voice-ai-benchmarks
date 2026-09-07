@@ -15,6 +15,20 @@ export const categoryOptions = [
   ...categories,
 ] as const;
 export type Architecture = 'cascaded' | 'speech-to-speech' | 'hybrid';
+export type BenchmarkType =
+  | 'benchmark'
+  | 'leaderboard'
+  | 'arena'
+  | 'framework'
+  | 'toolkit';
+export type EvaluationMethod =
+  | 'automatic'
+  | 'deterministic'
+  | 'human'
+  | 'llm-judge'
+  | 'mixed'
+  | 'unknown';
+export type Openness = 'open' | 'partially-open' | 'closed' | 'unknown';
 
 export type Benchmark = {
   id: string;
@@ -22,6 +36,9 @@ export type Benchmark = {
   organization: string;
   description: string;
   categories: CategoryId[];
+  benchmarkType: BenchmarkType;
+  evaluationMethod: EvaluationMethod;
+  openness: Openness;
   websiteUrl: string;
   codeUrl?: string;
   paperUrl?: string;
@@ -50,6 +67,27 @@ function validateBenchmark(value: Benchmark, source: string): Benchmark {
     'speech-to-speech',
     'hybrid',
   ]);
+  const validBenchmarkTypes = new Set<BenchmarkType>([
+    'benchmark',
+    'leaderboard',
+    'arena',
+    'framework',
+    'toolkit',
+  ]);
+  const validEvaluationMethods = new Set<EvaluationMethod>([
+    'automatic',
+    'deterministic',
+    'human',
+    'llm-judge',
+    'mixed',
+    'unknown',
+  ]);
+  const validOpenness = new Set<Openness>([
+    'open',
+    'partially-open',
+    'closed',
+    'unknown',
+  ]);
   const requiredStrings = [
     value.id,
     value.name,
@@ -70,6 +108,15 @@ function validateBenchmark(value: Benchmark, source: string): Benchmark {
   }
   if (value.categories.some((category) => !validCategories.has(category))) {
     throw new Error(`Unknown category in ${source}`);
+  }
+  if (!validBenchmarkTypes.has(value.benchmarkType)) {
+    throw new Error(`Unknown benchmark type in ${source}`);
+  }
+  if (!validEvaluationMethods.has(value.evaluationMethod)) {
+    throw new Error(`Unknown evaluation method in ${source}`);
+  }
+  if (!validOpenness.has(value.openness)) {
+    throw new Error(`Unknown openness value in ${source}`);
   }
   if (
     value.architectures !== undefined &&

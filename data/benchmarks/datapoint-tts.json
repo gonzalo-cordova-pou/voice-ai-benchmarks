@@ -1,0 +1,11 @@
+{
+  "id": "datapoint-tts",
+  "name": "TTS Human Preferences",
+  "organization": "Datapoint AI",
+  "description": "A human-preference leaderboard comparing text-to-speech models across generated samples.",
+  "categories": ["tts"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "human",
+  "openness": "partially-open",
+  "websiteUrl": "https://trydatapoint.com/benchmark/leaderboard"
+}

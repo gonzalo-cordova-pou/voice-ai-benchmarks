@@ -1,0 +1,11 @@
+{
+  "id": "codett",
+  "name": "CoDeTT",
+  "organization": "BRVoice Team, Bairong",
+  "description": "Evaluates context-aware decisions to respond, wait, continue speaking, or stop and listen.",
+  "categories": ["turn-taking"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/YingaoWang-casia/CoDeTT.github.io"
+}

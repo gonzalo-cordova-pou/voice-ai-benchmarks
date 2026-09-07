@@ -1,0 +1,14 @@
+{
+  "id": "mtalk-bench",
+  "name": "MTalk-Bench",
+  "organization": "Freedom Intelligence",
+  "description": "Evaluates speech-to-speech models in multi-turn dialogue across semantic, paralinguistic, and ambient conditions.",
+  "categories": ["s2s"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://arxiv.org/abs/2508.18240",
+  "codeUrl": "https://github.com/FreedomIntelligence/MTalk-Bench",
+  "paperUrl": "https://arxiv.org/abs/2508.18240",
+  "architectures": ["speech-to-speech"]
+}

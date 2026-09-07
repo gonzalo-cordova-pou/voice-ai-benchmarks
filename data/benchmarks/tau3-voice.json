@@ -1,0 +1,14 @@
+{
+  "id": "tau3-voice",
+  "name": "τ-Voice",
+  "organization": "Sierra",
+  "description": "Evaluates full-duplex voice agents on grounded customer-service tasks with tools and realistic audio conditions.",
+  "categories": ["turn-taking", "s2s", "voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://taubench.com/leaderboard?benchmark=voice",
+  "codeUrl": "https://github.com/sierra-research/tau2-bench",
+  "paperUrl": "https://arxiv.org/abs/2603.13686",
+  "architectures": ["speech-to-speech"]
+}

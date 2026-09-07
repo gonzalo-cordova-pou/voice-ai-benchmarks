@@ -1,0 +1,11 @@
+{
+  "id": "mint-bench",
+  "name": "MINT-Bench",
+  "organization": "ASLP Lab, Northwestern Polytechnical University",
+  "description": "Evaluates text-to-speech models on instruction following and speech quality across ten languages.",
+  "categories": ["tts"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "unknown",
+  "websiteUrl": "https://longwaytog0.github.io/MINT-Bench/"
+}

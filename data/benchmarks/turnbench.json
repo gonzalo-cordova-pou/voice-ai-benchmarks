@@ -1,0 +1,13 @@
+{
+  "id": "turnbench",
+  "name": "TurnBench",
+  "organization": "Sesame",
+  "description": "Evaluates end-of-turn and interruption detection in recorded human conversations.",
+  "categories": ["turn-taking"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "automatic",
+  "openness": "partially-open",
+  "websiteUrl": "https://www.sesame.com/blog/turnbench",
+  "codeUrl": "https://github.com/SesameAILabs/turnbench",
+  "paperUrl": "https://arxiv.org/abs/2608.25218"
+}

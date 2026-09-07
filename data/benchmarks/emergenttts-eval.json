@@ -1,0 +1,11 @@
+{
+  "id": "emergenttts-eval",
+  "name": "EmergentTTS-Eval",
+  "organization": "Boson AI",
+  "description": "Evaluates text-to-speech models on prosody, expressiveness, and linguistic challenges.",
+  "categories": ["tts"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "llm-judge",
+  "openness": "open",
+  "websiteUrl": "https://github.com/boson-ai/EmergentTTS-Eval-public"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "humanness-index",
+  "name": "The Humanness Index",
+  "organization": "Vapi",
+  "description": "Ranks text-to-speech systems through blind human preference testing focused on how human the voices sound.",
+  "categories": ["tts"],
+  "benchmarkType": "arena",
+  "evaluationMethod": "human",
+  "openness": "partially-open",
+  "websiteUrl": "https://humannessindex.vapi.ai/",
+  "codeUrl": "https://github.com/VapiAI/humanness-index"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "car-bench",
+  "name": "CAR-bench",
+  "organization": "BMW Group / University of Augsburg",
+  "description": "Evaluates LLM agents on tool use, ambiguity handling, and capability awareness in an in-car assistant domain.",
+  "categories": ["llm"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://github.com/CAR-bench/car-bench"
+}

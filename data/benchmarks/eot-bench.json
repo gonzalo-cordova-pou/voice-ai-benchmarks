@@ -1,0 +1,11 @@
+{
+  "id": "eot-bench",
+  "name": "eot-bench",
+  "organization": "LiveKit",
+  "description": "Compares end-of-turn detectors on false cutoffs and response delay across 14 languages.",
+  "categories": ["turn-taking"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/livekit/eot-bench"
+}

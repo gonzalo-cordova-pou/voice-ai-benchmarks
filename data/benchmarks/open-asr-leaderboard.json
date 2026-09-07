@@ -1,0 +1,12 @@
+{
+  "id": "open-asr-leaderboard",
+  "name": "Open ASR Leaderboard",
+  "organization": "Hugging Face",
+  "description": "Compares open speech recognition models across established transcription datasets.",
+  "categories": ["stt"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://huggingface.co/spaces/hf-audio/open_asr_leaderboard",
+  "codeUrl": "https://github.com/huggingface/open_asr_leaderboard"
+}

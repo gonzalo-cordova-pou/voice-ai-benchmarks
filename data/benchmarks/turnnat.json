@@ -1,0 +1,11 @@
+{
+  "id": "turnnat",
+  "name": "TurnNat",
+  "organization": "hzted",
+  "description": "Evaluates turn-taking naturalness scorers using paired natural and timing-perturbed conversations.",
+  "categories": ["turn-taking"],
+  "benchmarkType": "framework",
+  "evaluationMethod": "automatic",
+  "openness": "unknown",
+  "websiteUrl": "https://github.com/hzted/turnnat-benchmark"
+}

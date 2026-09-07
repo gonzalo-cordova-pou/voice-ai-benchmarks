@@ -1,0 +1,13 @@
+{
+  "id": "aiewf-eval",
+  "name": "aiewf-eval",
+  "organization": "Daily / Pipecat",
+  "description": "Compares text and speech-to-speech models on latency, tool use, instruction following, and grounding for voice agents.",
+  "categories": ["llm", "s2s"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://www.daily.co/blog/benchmarking-llms-for-voice-agent-use-cases/",
+  "codeUrl": "https://github.com/kwindla/aiewf-eval",
+  "architectures": ["cascaded", "speech-to-speech"]
+}

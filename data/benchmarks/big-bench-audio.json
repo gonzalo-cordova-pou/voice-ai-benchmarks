@@ -1,0 +1,11 @@
+{
+  "id": "big-bench-audio",
+  "name": "Big Bench Audio",
+  "organization": "Artificial Analysis",
+  "description": "Evaluates audio-language models on spoken reasoning questions adapted from Big Bench Hard.",
+  "categories": ["s2s", "llm"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "llm-judge",
+  "openness": "open",
+  "websiteUrl": "https://huggingface.co/datasets/ArtificialAnalysis/big_bench_audio"
+}

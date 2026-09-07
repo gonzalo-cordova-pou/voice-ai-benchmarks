@@ -1,0 +1,13 @@
+{
+  "id": "tau2-bench",
+  "name": "τ²-bench",
+  "organization": "Sierra",
+  "description": "Evaluates text-based language-model agents on multi-turn collaboration, policy following, and tool use in realistic domains.",
+  "categories": ["llm"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "deterministic",
+  "openness": "open",
+  "websiteUrl": "https://sierra.ai/blog/benchmarking-agents-in-collaborative-real-world-scenarios",
+  "codeUrl": "https://github.com/sierra-research/tau2-bench",
+  "paperUrl": "https://arxiv.org/abs/2506.07982"
+}

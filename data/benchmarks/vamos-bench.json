@@ -1,0 +1,13 @@
+{
+  "id": "vamos-bench",
+  "name": "VAmoS Bench",
+  "organization": "Veris AI",
+  "description": "Runs complete voice agents through simulated phone calls and measures end-to-end task completion.",
+  "categories": ["voice-agents"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "mixed",
+  "openness": "partially-open",
+  "websiteUrl": "https://veris.ai/leaderboard",
+  "codeUrl": "https://github.com/veris-ai/riley-agent",
+  "architectures": ["cascaded", "speech-to-speech", "hybrid"]
+}

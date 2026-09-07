@@ -2,7 +2,10 @@ import { useEffect } from 'react';
 import {
   type Architecture,
   type Benchmark,
+  type BenchmarkType,
   type CatalogCategory,
+  type EvaluationMethod,
+  type Openness,
   categories,
   categoryOptions,
 } from '@/lib/benchmarks';
@@ -23,6 +26,30 @@ const architectureLabels: Record<Architecture, string> = {
   cascaded: 'Cascaded',
   'speech-to-speech': 'Speech-to-Speech',
   hybrid: 'Hybrid',
+};
+
+const benchmarkTypeLabels: Record<BenchmarkType, string> = {
+  benchmark: 'Benchmark',
+  leaderboard: 'Leaderboard',
+  arena: 'Arena',
+  framework: 'Framework',
+  toolkit: 'Toolkit',
+};
+
+const evaluationMethodLabels: Record<EvaluationMethod, string> = {
+  automatic: 'Automatic evaluation',
+  deterministic: 'Deterministic evaluation',
+  human: 'Human evaluation',
+  'llm-judge': 'LLM judge',
+  mixed: 'Mixed evaluation',
+  unknown: 'Evaluation method unknown',
+};
+
+const opennessLabels: Record<Openness, string> = {
+  open: 'Open',
+  'partially-open': 'Partially open',
+  closed: 'Closed',
+  unknown: 'Openness unknown',
 };
 
 type LibraryProps = {
@@ -153,6 +180,11 @@ export function BenchmarkLibrary({
                 </div>
                 <p className="library-card-description">
                   {benchmark.description}
+                </p>
+                <p className="library-benchmark-details">
+                  {benchmarkTypeLabels[benchmark.benchmarkType]} ·{' '}
+                  {evaluationMethodLabels[benchmark.evaluationMethod]} ·{' '}
+                  {opennessLabels[benchmark.openness]}
                 </p>
                 {benchmark.architectures && (
                   <p className="library-architectures">

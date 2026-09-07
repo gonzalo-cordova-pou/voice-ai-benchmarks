@@ -1,0 +1,11 @@
+{
+  "id": "voicebench",
+  "name": "VoiceBench",
+  "organization": "National University of Singapore",
+  "description": "Evaluates voice assistants on spoken questions, instruction following, and safety.",
+  "categories": ["llm", "voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://github.com/MatthewCYM/VoiceBench"
+}

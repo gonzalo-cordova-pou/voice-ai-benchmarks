@@ -292,12 +292,16 @@
   margin: 0 0 18px;
   text-wrap: pretty;
 }
+.library-benchmark-details,
 .library-architectures {
   font:
     12px/1.6 'Courier New',
     monospace;
   color: var(--library-muted);
   margin: 0 0 20px;
+}
+.library-benchmark-details + .library-architectures {
+  margin-top: -14px;
 }
 .library-card-links {
   display: flex;

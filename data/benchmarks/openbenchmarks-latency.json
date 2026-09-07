@@ -1,0 +1,13 @@
+{
+  "id": "openbenchmarks-latency",
+  "name": "Voice Agent Latency Benchmark",
+  "organization": "OpenBenchmarks Labs",
+  "description": "Measures caller-perceived response latency from real phone-call recordings across complete voice-agent platforms.",
+  "categories": ["voice-agents"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://openbenchmarks.com/voice-agent-latency",
+  "codeUrl": "https://github.com/openbenchmarks-labs/voice-agent-latency",
+  "architectures": ["cascaded", "speech-to-speech", "hybrid"]
+}

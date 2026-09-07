@@ -1,0 +1,12 @@
+{
+  "id": "voicecodebench",
+  "name": "VoiceCodeBench",
+  "organization": "BeSimple AI",
+  "description": "Compares speech recognition systems on exact structured-value recovery in English workplace speech.",
+  "categories": ["stt"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://besimple.ai/research/voice-code-bench/",
+  "codeUrl": "https://huggingface.co/datasets/besimple-ai/voice-code-bench"
+}

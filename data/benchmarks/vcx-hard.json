@@ -1,0 +1,11 @@
+{
+  "id": "vcx-hard",
+  "name": "vCX-Hard",
+  "organization": "Retell AI",
+  "description": "Compares LLMs on grounding and tool-call correctness using difficult turns from real contact-center calls.",
+  "categories": ["llm"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "llm-judge",
+  "openness": "closed",
+  "websiteUrl": "https://www.retellai.com/blog/vcx-hard-benchmark"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "coval-voice-ai-benchmarks",
+  "name": "Voice AI Benchmarks",
+  "organization": "Coval",
+  "description": "A collection of leaderboards comparing speech recognition, text-to-speech, and speech-to-speech systems.",
+  "categories": ["stt", "tts", "s2s"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://benchmarks.coval.ai/overview",
+  "codeUrl": "https://github.com/coval-ai/benchmarks"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "pipecat-stt-benchmark",
+  "name": "STT Benchmark",
+  "organization": "Daily / Pipecat",
+  "description": "Compares streaming speech-to-text services on semantic accuracy and time to final transcription.",
+  "categories": ["stt"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://www.daily.co/blog/benchmarking-stt-for-voice-agents/",
+  "codeUrl": "https://github.com/pipecat-ai/stt-benchmark"
+}

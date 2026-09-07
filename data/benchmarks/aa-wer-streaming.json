@@ -1,0 +1,11 @@
+{
+  "id": "aa-wer-streaming",
+  "name": "AA-WER Streaming",
+  "organization": "Artificial Analysis",
+  "description": "Compares streaming speech recognition models on transcription accuracy and latency.",
+  "categories": ["stt"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "automatic",
+  "openness": "partially-open",
+  "websiteUrl": "https://artificialanalysis.ai/speech-to-text/streaming"
+}

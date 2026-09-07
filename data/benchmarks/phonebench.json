@@ -1,0 +1,11 @@
+{
+  "id": "phonebench",
+  "name": "PhoneBench Alpha 1",
+  "organization": "Daily / Pipecat",
+  "description": "Compares LLMs on phone-assistant dialogue, tool calling, and response latency.",
+  "categories": ["llm"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "llm-judge",
+  "openness": "closed",
+  "websiteUrl": "https://www.pipecat.ai/benchmarks/phonebench-alpha-1"
+}

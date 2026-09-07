@@ -1,0 +1,11 @@
+{
+  "id": "design-arena-tts",
+  "name": "Design Arena TTS Leaderboard",
+  "organization": "Design Arena",
+  "description": "A human-preference arena for comparing generated speech from text-to-speech systems.",
+  "categories": ["tts"],
+  "benchmarkType": "arena",
+  "evaluationMethod": "human",
+  "openness": "partially-open",
+  "websiteUrl": "https://www.designarena.ai/leaderboard/tts"
+}

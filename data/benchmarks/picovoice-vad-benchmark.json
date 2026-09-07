@@ -1,0 +1,11 @@
+{
+  "id": "picovoice-vad-benchmark",
+  "name": "Voice Activity Benchmark",
+  "organization": "Picovoice",
+  "description": "Compares voice activity detectors on accuracy in noise and runtime.",
+  "categories": ["turn-taking"],
+  "benchmarkType": "framework",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/Picovoice/voice-activity-benchmark"
+}

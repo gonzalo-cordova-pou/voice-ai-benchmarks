@@ -1,0 +1,14 @@
+{
+  "id": "eva",
+  "name": "EVA-Bench",
+  "organization": "ServiceNow",
+  "description": "Evaluates complete multi-turn voice agents on task accuracy and conversational experience.",
+  "categories": ["voice-agents"],
+  "benchmarkType": "framework",
+  "evaluationMethod": "mixed",
+  "openness": "open",
+  "websiteUrl": "https://servicenow.github.io/eva/",
+  "codeUrl": "https://github.com/ServiceNow/eva",
+  "paperUrl": "https://arxiv.org/abs/2605.13841",
+  "architectures": ["cascaded", "speech-to-speech"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "voiceeq-bench",
+  "name": "RW-Voice-EQ Bench",
+  "organization": "Hume AI",
+  "description": "Evaluates voice models in real-world conditions across speech recognition, synthesis, and speech-to-speech behavior.",
+  "categories": ["stt", "tts", "s2s", "voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "mixed",
+  "openness": "partially-open",
+  "websiteUrl": "https://www.hume.ai/rw-voice-eq?category=sts",
+  "paperUrl": "https://arxiv.org/abs/2607.14846"
+}

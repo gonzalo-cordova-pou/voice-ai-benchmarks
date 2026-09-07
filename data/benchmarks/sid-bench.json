@@ -1,0 +1,11 @@
+{
+  "id": "sid-bench",
+  "name": "SID-Bench",
+  "organization": "Qwen Team, Alibaba",
+  "description": "Evaluates interruption detection and response timing in recorded English and Mandarin conversations.",
+  "categories": ["turn-taking"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/xkx-hub/SID-bench"
+}
