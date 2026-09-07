@@ -19,7 +19,7 @@
     "@fontsource/vt323": "^5.3.0",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-react": "1.31.0",
+    "lucide-react": "1.40.0",
     "react": "19.2.6",
     "react-dom": "19.2.6",
     "shadcn": "4.18.0",
