@@ -1,0 +1,52 @@
+name: Add a benchmark
+description: Suggest a public Voice AI benchmark for the directory.
+title: "Add: "
+labels:
+  - benchmark
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Benchmark name
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: Organization
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Official benchmark URL
+    validations:
+      required: true
+  - type: checkboxes
+    id: categories
+    attributes:
+      label: Categories
+      options:
+        - label: Speech-to-Text
+        - label: Text-to-Speech
+        - label: Turn-Taking
+        - label: LLM
+        - label: Speech-to-Speech
+        - label: Voice Agents
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What does it compare?
+      description: Describe the benchmark in 1–2 neutral sentences.
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: Code URL
+  - type: input
+    id: paper
+    attributes:
+      label: Paper URL
