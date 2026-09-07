@@ -53,7 +53,7 @@ Run `npm run lint`, `npm test`, and `npm run build` before submitting. Discuss l
 
 GitHub stars and Semantic Scholar citations live in the generated `data/benchmark-stats.json` snapshot. Do not invent or manually estimate counts. You do not need to refresh metrics or provide an API key when contributing an entry: the production workflow refreshes them after changes are merged. A missing count is unknown, not zero.
 
-If your change affects refresh behavior, see the [maintenance guide](docs/maintaining.md) for local refresh instructions. Keep the providers' attribution and source links intact; see [third-party notices](THIRD_PARTY_NOTICES.md).
+If your change affects refresh behavior, see [deployment and stats updates](README.md#deployment-and-stats-updates). Keep the providers' attribution and source links intact; see [license and data sources](README.md#license-and-data-sources).
 
 ## Working Together
 

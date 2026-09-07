@@ -52,7 +52,13 @@ Choose a component on the handheld console to open the library. Category and sor
 
 Counts measure attention, not benchmark quality. Missing metrics are kept in separate alphabetical groups. Shared repositories are labeled, and each badge links to its source and shows its retrieval date.
 
-The production site refreshes stats daily through GitHub Actions and remains fully static. See the [maintenance guide](docs/maintaining.md) for refresh commands, deployment, and hosting a fork.
+## Deployment and Stats Updates
+
+GitHub Actions deploys the static site on pushes to `main` and refreshes stars and citations daily at **08:23 UTC**. This is already enabled. To refresh immediately, use **Actions → Deploy to GitHub Pages → Run workflow**. No API secrets are required: the workflow uses GitHub's built-in token and Semantic Scholar's public API.
+
+The workflow caches updated counts between runs. Failed lookups retain previous counts and retrieval dates; the checked-in snapshot is the fallback. Updated production counts are not committed back to the repository. Run `npm run stats:refresh` to update the local snapshot. The script accepts optional `GITHUB_TOKEN` and `SEMANTIC_SCHOLAR_API_KEY` environment variables; keep credentials out of source files and client-side Vite variables.
+
+For a fork, enable Actions and select **Settings → Pages → GitHub Actions**. Update repository links in `app/page.tsx` and `components/catalog.tsx`, configure your own domain, and set Vite's `base` for your repository path if using a Pages project URL. GitHub may delay scheduled runs or disable them after 60 days without activity in a public repository; see [schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
 
 ## Contributors
 
@@ -60,4 +66,9 @@ Maintained by [Gonzalo Cordova Pou](https://github.com/gonzalo-cordova-pou). Con
 
 ## License and Data Sources
 
-Project source code is available under the [MIT License](LICENSE). Linked benchmarks, API-derived metrics, and third-party assets remain subject to their respective terms. See [third-party notices](THIRD_PARTY_NOTICES.md) for data attribution and the bundled font license.
+Original code and documentation are available under the [MIT License](LICENSE). Third-party materials retain their own terms:
+
+- Citation counts and paper identifiers come from the [Semantic Scholar API](https://www.semanticscholar.org/product/api), subject to its [API license](https://www.semanticscholar.org/product/api/license) and applicable data licenses. The provider also publishes [API-hosted terms](https://api.semanticscholar.org/license/); confirm applicable terms before commercial reuse or redistributing the collected data as a separate dataset.
+- GitHub star counts are subject to [GitHub's API terms](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#h-api-terms). Metric badges link to their sources and show retrieval dates.
+- The bundled VT323 font uses the [SIL Open Font License 1.1](public/licenses/VT323-OFL.txt), also included in the deployed site. Software dependencies retain their package licenses.
+- Linked benchmarks, papers, and datasets remain the property of their respective owners; inclusion does not relicense them.
