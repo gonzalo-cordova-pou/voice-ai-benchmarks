@@ -44,7 +44,7 @@ jobs:
         run: npm test
       - name: Restore previous benchmark stats
         id: stats-cache
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: data/benchmark-stats.json
           key: benchmark-stats-v1-${{ github.run_id }}-${{ github.run_attempt }}
@@ -57,7 +57,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: Save benchmark stats for the next refresh
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: data/benchmark-stats.json
           key: ${{ steps.stats-cache.outputs.cache-primary-key }}
