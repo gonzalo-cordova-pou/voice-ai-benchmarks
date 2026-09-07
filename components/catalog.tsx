@@ -391,14 +391,14 @@ export function Catalog({
               aria-label="Previous item"
               onClick={() => move(-1)}
             >
-              <span>▲</span>
+              <span aria-hidden="true" />
             </button>
             <button
               className="dpad-left"
               aria-label="Back to main menu"
               onClick={resetMenu}
             >
-              <span>◀</span>
+              <span aria-hidden="true" />
             </button>
             <span className="dpad-center" aria-hidden="true">
               <i />
@@ -408,14 +408,14 @@ export function Catalog({
               aria-label="Open selected item"
               onClick={confirm}
             >
-              <span>▶</span>
+              <span aria-hidden="true" />
             </button>
             <button
               className="dpad-down"
               aria-label="Next item"
               onClick={() => move(1)}
             >
-              <span>▼</span>
+              <span aria-hidden="true" />
             </button>
           </div>
         </div>

@@ -649,8 +649,26 @@ kbd {
   background: #424443;
 }
 .dpad button span {
-  font-size: 15px;
-  text-shadow: 0 1px #696966;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  filter: drop-shadow(0 1px 0 #696966);
+}
+.dpad-up span {
+  border-top: 0;
+  border-bottom: 10px solid currentColor;
+}
+.dpad-left span {
+  border-left: 0;
+  border-right: 10px solid currentColor;
+}
+.dpad-right span {
+  border-right: 0;
+  border-left: 10px solid currentColor;
+}
+.dpad-down span {
+  border-bottom: 0;
+  border-top: 10px solid currentColor;
 }
 .dpad-up {
   grid-area: 1 / 2;
