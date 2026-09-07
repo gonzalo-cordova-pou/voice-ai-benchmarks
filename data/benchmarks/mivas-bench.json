@@ -1,0 +1,13 @@
+{
+  "id": "mivas-bench",
+  "name": "MIVAS Bench",
+  "organization": "Bluejay Labs",
+  "description": "Evaluates voice agents on multi-industry workflows through deterministic checks of tool use, specialist handoffs, and final database state.",
+  "categories": ["s2s", "voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "deterministic",
+  "openness": "partially-open",
+  "websiteUrl": "https://research.getbluejay.ai/benchmarks/mivas/leaderboard",
+  "codeUrl": "https://github.com/bluejay-ai-dev/mivas-bench",
+  "architectures": ["cascaded", "speech-to-speech"]
+}
