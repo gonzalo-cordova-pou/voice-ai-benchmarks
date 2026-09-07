@@ -20,7 +20,7 @@ Do not copy model scores, datasets, papers, or private information into the repo
 4. Classify benchmark type, evaluation method, and openness. Use `unknown` rather than guessing where that value is supported.
 5. Check the official website, code, and paper links.
 6. Run `npm ci`, `npm run lint`, `npm test`, and `npm run build`.
-7. Open a pull request describing the entry or correction, with a link to any related issue.
+7. Open a pull request using the [benchmark PR template](.github/pull_request_template.md). Describe what it evaluates and why it belongs, cite owner-published evidence for the classifications, and report validation results and any uncertainty. Link any related issue.
 
 Create a JSON file in `data/benchmarks/` using this template:
 
