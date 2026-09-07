@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
   type Architecture,
   type Benchmark,
@@ -44,6 +45,36 @@ export function BenchmarkLibrary({
       category === 'all' || item.categories.some((id) => id === category),
   );
   const name = categoryOptions.find((item) => item.id === category)?.label;
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (
+        event.key !== 'ArrowLeft' ||
+        event.repeat ||
+        event.metaKey ||
+        event.ctrlKey ||
+        event.altKey
+      ) {
+        return;
+      }
+
+      const target = event.target;
+      if (
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLTextAreaElement ||
+        target instanceof HTMLSelectElement ||
+        (target instanceof HTMLElement && target.isContentEditable)
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+      onBack();
+    }
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [onBack]);
 
   return (
     <section className="library-frame" aria-labelledby="library-heading">

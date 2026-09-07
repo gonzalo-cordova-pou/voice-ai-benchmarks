@@ -26,7 +26,7 @@ Open the local URL printed by the development server.
 
 ## Browse the Collection
 
-The handheld starts with two options: **Benchmarks** opens the component selector, and **GitHub repo** opens the repository in a new tab while displaying contribution links on the console. Selecting a component opens the expanded LCD library. Benchmark cards show descriptions and links in a responsive grid with ordinary page scrolling. Switch components from the library toolbar or use “Back to console” to return to your selected component. Use the directional controls and A/START to browse and open items. B or Escape returns one level, SELECT returns to the main menu, and START also wakes the screen when it is off.
+The handheld starts with two options: **Benchmarks** opens the component selector, and **GitHub repo** opens the repository in a new tab while displaying contribution links on the console. Selecting a component opens the expanded LCD library. Benchmark cards show descriptions and links in a responsive grid with ordinary page scrolling. Switch components from the library toolbar, use “Back to console,” or press Left Arrow to return to your selected component. Use the directional controls and A/START to browse and open items. B or Escape returns one level, SELECT returns to the main menu, and START also wakes the screen when it is off.
 
 Component selections have shareable URLs, and browser Back/Forward restores navigation and scroll position. Existing benchmark-specific URLs highlight the corresponding card. Benchmark, code, and paper links open in a new tab.
 
