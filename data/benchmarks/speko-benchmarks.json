@@ -1,0 +1,12 @@
+{
+  "id": "speko-benchmarks",
+  "name": "Speko Benchmarks",
+  "organization": "Speko",
+  "description": "Measures STT, TTS, LLM, turn-taking and speech-to-speech providers on latency and accuracy from a single production voice gateway, and ranks assembled agent stacks.",
+  "categories": ["stt", "tts", "turn-taking", "llm", "s2s", "voice-agents"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "mixed",
+  "openness": "partially-open",
+  "websiteUrl": "https://benchmarks.speko.ai",
+  "architectures": ["cascaded", "speech-to-speech", "hybrid"]
+}
