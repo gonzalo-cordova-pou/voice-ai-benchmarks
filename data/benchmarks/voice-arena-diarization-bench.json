@@ -1,0 +1,11 @@
+{
+  "id": "voice-arena-diarization-bench",
+  "name": "Diarization Bench",
+  "organization": "Voice Arena",
+  "description": "Compares open and commercial speaker diarization systems on far-field English conversations using diarization error, Jaccard error, and speaker-count accuracy.",
+  "categories": ["diarization"],
+  "benchmarkType": "leaderboard",
+  "evaluationMethod": "automatic",
+  "openness": "partially-open",
+  "websiteUrl": "https://voicearena.com/diarization-bench"
+}

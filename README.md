@@ -4,9 +4,10 @@ A directory of benchmarks for the components and complete systems used to build 
 
 **[Browse the collection →](https://voicebenchmarks.com/)**
 
-Discover benchmarks, leaderboards, arenas, frameworks, and toolkits across six categories:
+Discover benchmarks, leaderboards, arenas, frameworks, and toolkits across seven categories:
 
 - **Speech-to-Text (STT):** transcription models and services.
+- **Speaker Diarization:** identifying who spoke when in multi-speaker audio.
 - **Text-to-Speech (TTS):** speech generation models and services.
 - **Turn-Taking:** voice activity, end-of-turn detection, interruptions, and overlap.
 - **LLM:** language-model evaluation for voice-agent workloads.

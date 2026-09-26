@@ -1,0 +1,11 @@
+{
+  "id": "picovoice-speaker-diarization-benchmark",
+  "name": "Speaker Diarization Benchmark",
+  "organization": "Picovoice",
+  "description": "Compares speaker diarization engines on accuracy, memory use, and compute cost.",
+  "categories": ["diarization"],
+  "benchmarkType": "framework",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/Picovoice/speaker-diarization-benchmark"
+}
