@@ -1,0 +1,13 @@
+{
+  "id": "voicetest",
+  "name": "voicetest",
+  "organization": "voicetest",
+  "description": "An open-source test harness that runs simulated conversations against voice agent definitions from Retell, VAPI, LiveKit, Bland, and Telnyx, and scores them with LLM judges.",
+  "categories": ["voice-agents", "llm"],
+  "benchmarkType": "framework",
+  "evaluationMethod": "llm-judge",
+  "openness": "open",
+  "websiteUrl": "https://voicetest.dev",
+  "codeUrl": "https://github.com/voicetestdev/voicetest",
+  "architectures": ["cascaded"]
+}
