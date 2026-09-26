@@ -22,6 +22,8 @@ import { benchmarkRepository } from '@/lib/metric-sources.mjs';
 const descriptions: Record<CatalogCategory, string> = {
   all: 'Discover benchmarks for every layer of your voice agent, from speech recognition to complete systems.',
   stt: 'Explore benchmarks for speech recognition models and transcription services.',
+  diarization:
+    'Explore benchmarks for identifying who spoke when, across meetings, calls, and multi-speaker audio.',
   tts: 'Explore benchmarks for speech quality, intelligibility, and natural-sounding voices.',
   'turn-taking':
     'Explore benchmarks for detecting speech, knowing when to respond, and handling interruptions.',

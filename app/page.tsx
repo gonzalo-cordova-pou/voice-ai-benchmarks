@@ -4,6 +4,7 @@ import { BenchmarkLibrary } from '@/components/benchmark-library';
 import {
   type CatalogCategory,
   type ConsoleScreen,
+  categories,
   categoryOptions,
   getBenchmarks,
 } from '@/lib/benchmarks';
@@ -201,7 +202,7 @@ export default function Home() {
                 </span>
                 <i />
                 <span>
-                  <strong>6</strong> categories
+                  <strong>{categories.length}</strong> categories
                 </span>
                 <i />
                 <span>Always open</span>

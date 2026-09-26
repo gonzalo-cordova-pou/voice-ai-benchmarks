@@ -1,5 +1,6 @@
 export const categories = [
   { id: 'stt', label: 'Speech-to-Text', shortLabel: 'STT' },
+  { id: 'diarization', label: 'Speaker Diarization', shortLabel: 'Diarization' },
   { id: 'tts', label: 'Text-to-Speech', shortLabel: 'TTS' },
   { id: 'turn-taking', label: 'Turn-Taking', shortLabel: 'Turn-Taking' },
   { id: 'llm', label: 'LLM', shortLabel: 'LLM' },

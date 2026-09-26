@@ -41,7 +41,7 @@ Create a JSON file in `data/benchmarks/` using this template:
 }
 ```
 
-Only `codeUrl`, `paperUrl`, and `architectures` are optional. Valid categories are `stt`, `tts`, `turn-taking`, `llm`, `s2s`, and `voice-agents`. Valid benchmark types are `benchmark`, `leaderboard`, `arena`, `framework`, and `toolkit`. Valid evaluation methods are `automatic`, `deterministic`, `human`, `llm-judge`, `mixed`, and `unknown`. Valid openness values are `open`, `partially-open`, `closed`, and `unknown`. Valid architectures are `cascaded`, `speech-to-speech`, and `hybrid`.
+Only `codeUrl`, `paperUrl`, and `architectures` are optional. Valid categories are `stt`, `diarization`, `tts`, `turn-taking`, `llm`, `s2s`, and `voice-agents`. Valid benchmark types are `benchmark`, `leaderboard`, `arena`, `framework`, and `toolkit`. Valid evaluation methods are `automatic`, `deterministic`, `human`, `llm-judge`, `mixed`, and `unknown`. Valid openness values are `open`, `partially-open`, `closed`, and `unknown`. Valid architectures are `cascaded`, `speech-to-speech`, and `hybrid`.
 
 ## Website Changes
 

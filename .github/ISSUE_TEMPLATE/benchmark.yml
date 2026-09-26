@@ -28,6 +28,7 @@ body:
       label: Categories
       options:
         - label: Speech-to-Text
+        - label: Speaker Diarization
         - label: Text-to-Speech
         - label: Turn-Taking
         - label: LLM
