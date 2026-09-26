@@ -1,0 +1,12 @@
+{
+  "id": "argmax-openbench",
+  "name": "OpenBench",
+  "organization": "Argmax",
+  "description": "Open framework for comparing speaker diarization, speech recognition, and streaming transcription systems across public datasets on accuracy and speed.",
+  "categories": ["diarization", "stt"],
+  "benchmarkType": "framework",
+  "evaluationMethod": "automatic",
+  "openness": "open",
+  "websiteUrl": "https://github.com/argmaxinc/OpenBench",
+  "paperUrl": "https://www.isca-archive.org/interspeech_2025/durmus25_interspeech.html"
+}
