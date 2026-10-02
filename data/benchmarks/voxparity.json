@@ -1,0 +1,14 @@
+{
+  "id": "voxparity",
+  "name": "VoxParity",
+  "organization": "Bhavik Mangla",
+  "description": "Tests whether voice agents act on what they hear: the transcript stays fixed while tone of voice, background sound or a second voice changes the correct tool call, compared against a words-only cascade.",
+  "categories": ["s2s", "voice-agents"],
+  "benchmarkType": "benchmark",
+  "evaluationMethod": "deterministic",
+  "openness": "partially-open",
+  "websiteUrl": "https://bhavik-mangla.github.io/voxparity-bench/",
+  "codeUrl": "https://github.com/bhavik-mangla/voxparity-bench",
+  "paperUrl": "https://arxiv.org/abs/2609.35922",
+  "architectures": ["cascaded", "speech-to-speech"]
+}
